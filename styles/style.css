@@ -1,0 +1,107 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* general css */
+body {
+  background-color: #222222;
+  color: #fff;
+  font-family: "Nunito", sans-serif;;
+}
+
+a {
+  text-decoration: none;
+  color: #218d0b;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  background-color: #222222;
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* title */
+.site-title {
+  color: #fff;
+}
+
+/* description */
+.site-description {
+  text-align: center;
+}
+
+.source-code-text {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* projects-grid */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+/* card/button */
+
+.button {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #222222;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.button:hover {
+  background-color: #218d0b;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .button {
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
