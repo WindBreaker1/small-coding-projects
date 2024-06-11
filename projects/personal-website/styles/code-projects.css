@@ -1,0 +1,54 @@
+.coding-projects-section {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--foreground);
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 500px;
+  font-family: inherit;
+}
+
+.card-image {
+  width: 100%; /* or any desired width */
+  height: 200px; /* or any desired height */
+  object-fit: cover;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--foreground);
+}
+
+.card-title {
+  font-family: inherit;
+  text-align: center;
+}
+
+.card-description {
+  font-family: inherit;
+  text-align: center;
+  padding: 5px;
+}
+
+.hashtag {
+  background-color: #1888b4;
+  border: 1px solid var(--foreground);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
